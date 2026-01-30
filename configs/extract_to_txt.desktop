@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;application/zip;application/x-rar;application/x-7z-compressed;
+Actions=extractToTxt
+X-KDE-Priority=TopLevel
+
+[Desktop Action extractToTxt]
+Name=Extract contents to Text File
+Name[ar]=استخراج المحتويات إلى ملف نصي
+Icon=text-x-generic
+Exec=python3 /usr/local/bin/extract_to_txt.py %f
